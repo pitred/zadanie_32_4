@@ -1,12 +1,18 @@
 {
-  "name": "format-date",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+   "name": "format-date",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "mocha index.test.js",
+      "test:watch": "onchange \"./*.js\" -- npm test",
+      "gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "mocha": "^6.2.0",
+      "onchange": "^6.0.0"
+   }
 }
